@@ -327,7 +327,7 @@ class PythonVirtualenvOperator(PythonOperator):
         processing templated fields, for examples ``['.sql', '.hql']``
     """
 
-    template_fields: Sequence[str] = ('templates_dict', 'op_args', 'op_kwargs', 'requirements',)
+    template_fields: Sequence[str] = ('requirements',)
     template_ext: Sequence[str] = ('.txt',)
     BASE_SERIALIZABLE_CONTEXT_KEYS = {
         'ds',
